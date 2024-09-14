@@ -4,5 +4,4 @@ spring:
 server:
   port: 9090
 
-dollarOfficial: 6.96
 messageGreeting: "Pregúntate si lo que estas haciendo hoy te acerca al lugar en el que quieres estar mañana."

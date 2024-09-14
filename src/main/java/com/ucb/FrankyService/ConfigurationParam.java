@@ -15,16 +15,7 @@ public class ConfigurationParam {
         this.messageSource=messageSource;
     }
 
-    @Value("${dollarOfficial}")
-    double officialDollar;
-
-    @Value("${messageGreeting}")
-    String greetingMessage;
-
-    double getOfficialDollar() {
-        return officialDollar;
-    }
-    String getGreetingMessage(String language){
+     String getGreetingMessage(String language){
         Locale locale=new Locale(language);
         return messageSource.getMessage("greetingMessage",null,locale);}
 }
